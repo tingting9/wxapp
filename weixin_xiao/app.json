@@ -1,0 +1,44 @@
+
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mapBox/MapIndex/MapIndex",
+    "pages/mapBox/gdMapFoot/gdMapFoot",
+     "pages/mapBox/gdMapBus/gdMapBus",
+    "pages/mapBox/mapH/mapH",
+    "pages/logs/logs",
+    "pages/tour/tour",
+    "pages/baby/baby"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "王胖胖与美女婷",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#dddddd",
+    "selectedColor":"#ff99d5",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/1.png",
+      "selectedIconPath": "image/4.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/tour/tour",
+      "iconPath": "image/2.png",
+      "selectedIconPath": "image/5.png",
+      "text": "旅游"
+    },{
+      "pagePath": "pages/mapBox/MapIndex/MapIndex",
+      "iconPath": "image/11.png",
+      "selectedIconPath": "image/10.png",
+      "text": "地图"
+    },{
+      "pagePath": "pages/mapBox/mapH/mapH",
+      "iconPath": "image/3.png",
+      "selectedIconPath": "image/6.png",
+      "text": "接口"
+    }]
+  }
+}

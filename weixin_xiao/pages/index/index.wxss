@@ -1,0 +1,74 @@
+/**index.wxss**/
+.contIndex{
+  padding:0;
+  align-items:flex-start;
+  
+}
+
+.userinfo {
+  display: flex;
+  /*flex-direction: column;*/
+  background:#f7f7fa;
+  width:100%;
+  padding:15rpx 15rpx;
+}
+
+.userinfo-avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  padding-left: 10rpx;
+  line-height: 50rpx;
+  
+  
+}
+.userinfo text{
+  font-family:"微软雅黑";
+  font-size:  15px;
+}
+
+
+.indexText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  padding-top: 200px;
+  font-family:"微软雅黑";
+  font-size:  30px;
+  color: #ddd;
+}
+
+
+.btnSer{
+  background:#ccc;
+  border-radius: 5px;
+  padding:5px;
+}
+
+.payBox{
+  width:100%;height:30px;background:Pink;text-align: center;margin:10px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

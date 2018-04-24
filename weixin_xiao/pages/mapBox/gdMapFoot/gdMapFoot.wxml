@@ -1,0 +1,14 @@
+<!--pages/gdMap/gdMap.wxml-->
+<view class="flex-style">
+  <view class="flex-item active" >步行</view>
+  <view class="flex-item" bindtouchstart="goToBus">公交</view>
+</view>
+<view class="map_box">
+  <map id="navi_map" latitude="{{currentPosition[1]}}" longitude="{{currentPosition[0]}}" scale="13" markers="{{markers}}" polyline="{{polyline}}" include-points='{{includePoints}}'></map>
+</view>
+
+<view class="text_box">
+  <view class="text">{{distance}}</view>
+  <view class="text">{{duration}}</view>
+  <!--<view class="detail_button" bindtouchstart="goDetail">详情</view>-->
+</view>

@@ -1,0 +1,34 @@
+<!--pages/gdMap/gdMap.wxml-->
+<view class="flex-style">
+  <view class="flex-item" bindtouchstart="goToWalk">步行</view>
+  <view class="flex-item active">公交</view>
+</view>
+<view class="map_box">
+  <map id="navi_map" latitude="{{currentPosition[1]}}" longitude="{{currentPosition[0]}}" scale="13" markers="{{markers}}" polyline="{{polyline}}" include-points='{{includePoints}}'></map>
+</view>
+
+<view class="text_box">
+  <view class="defaultBtn acitve" bindtap="btnTap" data-index="0">
+    <text>常规路线</text>
+    <view class="BtnTime">{{ALLInfor[0].duration}}分钟</view>
+    <view class="BtnDis">{{ALLInfor[0].distance}}公里</view>
+  </view>
+  <view class="defaultBtn" bindtap="btnTap" data-index="1">
+    <text>距离较短</text>
+    <view class="BtnTime">{{ALLInfor[1].duration}}分钟</view>
+    <view class="BtnDis">{{ALLInfor[1].distance}}公里</view>
+  </view>
+  <view class="defaultBtn" bindtap="btnTap" data-index="2">
+    <text>时间较短</text>
+    <view class="BtnTime">{{ALLInfor[2].duration}}分钟</view>
+    <view class="BtnDis">{{ALLInfor[2].distance}}公里</view>
+  </view>
+  <view class="defaultBtn" bindtap="btnTap" data-index="3">
+    <text>步行较少</text>
+    <view class="BtnTime">{{ALLInfor[3].duration}}分钟</view>
+    <view class="BtnDis">{{ALLInfor[3].distance}}公里</view>
+  </view>
+</view>
+<view class="TaxiCost">
+  <view>打车约<text>{{taxiCost}}</text>元</view>
+</view>

@@ -1,0 +1,285 @@
+/* pages/tour/tour.wxss */
+html,body{overflow: hidden;height:100%;width:100%;}
+.tourT {
+  height: 80rpx;
+  width: 100%;
+  display: -webkit-box;
+  border-top: #eee 1px solid;
+  
+}
+.contentBox{
+  /*top: 0;
+  left:0;*/
+  width:100%;
+  height:100%;
+}
+.tourText {
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  color: #5d5d5d;
+}
+
+.tourBox {
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+
+.tourBox .bigIcon {
+  width: 100%;
+  height: 300rpx;
+}
+
+.tourIcon {
+  position: absolute;
+  left: 50%;
+  top: -1rpx;
+  margin-left: -20rpx;
+  width: 0;
+  height: 0;
+  border-left: 20rpx solid transparent;
+  border-right: 20rpx solid transparent;
+  border-top: 20rpx solid #fff;
+}
+
+.tourTN {
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50rpx;
+  color: #b7b7b7;
+}
+
+.tourTe {
+  font-size: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b7b7b7;
+}
+
+.tourBox .smallIcon {
+  position: absolute;
+  width: 45rpx;
+  height: 45rpx;
+  right: 15rpx;
+  bottom: 35rpx;
+  box-shadow: 1px 1px 0 0 #ddd;
+  border-radius: 50%;
+}
+
+.tourIcomBottom {
+  position: absolute;
+  width: 100%;
+  height: 20rpx;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+}
+
+.tourBottomL, .tourBottomR {
+  display: flex;
+  -webkit-box-flex: 1;
+  background: #fff;
+}
+
+.tourBottomM {
+  border-left: 20rpx solid #fff;
+  border-right: 20rpx solid #fff;
+  border-top: 20rpx solid transparent;
+}
+
+.tourCont {
+  width: 100%;
+  position: relative;
+}
+
+.tourcc{
+  clear:both;
+  overflow:hidden;
+  width:100%;
+}
+
+.myCanvas {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+}
+
+.tourCBtn {
+  position: absolute;
+  left: 50%;
+  top: 150rpx;
+  width: 300rpx;
+  height: 60rpx;
+  margin-left: -150rpx;
+  border-radius: 15rpx;
+  border: 1px solid #eee;
+  color: #d4d4d4;
+  line-height: 60rpx;
+  text-align: center;
+  animation: showBtn 1s infinite 0.5s alternate;
+}
+
+@keyframes showBtn {
+  0% {
+    box-shadow: 0 0 5rpx 0 #eee;
+  }
+
+  100% {
+    box-shadow: 0 0 30rpx 0 #d4d4d4;
+  }
+}
+
+.tourH {
+  height: 50rpx;
+  border-bottom: 1px solid #eee;
+  padding: 0 5rpx;
+  font-size: 14px;
+  color: #b7b7b7;
+  width: 100%;
+  clear: both;
+  padding-top: 60rpx;
+}
+
+.tourC {
+  width: 50%;
+  float: left;
+  padding-bottom: 15rpx;
+  box-sizing: border-box;
+}
+
+.tourImg image {
+  background-size: cover;
+}
+
+.tourImg {
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.tourImg image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 3rpx 5rpx #eee;
+}
+
+.tourImg view {
+  width: 100%;
+  height: 300rpx;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tourTot {
+  text-align: center;
+  font-size: 15px;
+  color: #b7b7b7;
+  height:35px;
+  padding:0 35rpx;
+  box-sizing:border-box;
+
+}
+
+.boxTip {
+   width: 100%;
+   height: 100%;
+   -webkit-transform: perspective(800px) rotateY(90deg);
+    position: fixed;
+    top:0;
+    left:0%;
+    overflow: hidden;
+}
+.boxBg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.45;
+  overflow: hidden;
+  z-index: 10;
+  color: #fff;
+}
+
+.boxBgC {
+  width: 100%;
+  height:470rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  z-index: 20;
+  background: #fff;
+}
+
+.boxTipClose {
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 26px;
+  position: absolute;
+  right: 15px;
+  top:27%;
+  border-radius: 50%;
+  z-index: 30;
+  align-content: center;
+  color:#fff;
+  font-weight: hold;
+  text-shadow: 0 0 10rpx #ff99d5;
+}
+.navigator-hover{
+  width:100%;
+  height:470rpx;
+  overflow: hidden;
+}
+.slide-image{  
+    width: 100%; 
+}
+.swiper-box{
+  height:410px;
+}
+
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: 1rpx;
+     z-index:30;
+}
+.swiper-box .wx-swiper-dot{
+    width:30rpx;
+    display: inline-flex;
+    height: 10rpx;
+    margin-left: 10rpx;
+    justify-content:space-between;
+}
+.swiper-box .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    background: rgba(255,255,255,0.8);
+    border-radius: 8rpx
+}
+.swiper-box .wx-swiper-dot-active::before{
+    background:#ff99d5;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

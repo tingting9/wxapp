@@ -1,0 +1,4 @@
+<!--pages/MapBox/MapBox.wxml-->
+<view class="conentDiv">
+   <map id="myMap" show-location class="myMap" markers="{{markers}}" include-points="{{includePoints}}" polyline="{{polyline}}"  scale="15" latitude="{{latitude}}" longitude="{{longitude}}" controls="{{controls}}"  bindcontroltap="controltap"  />
+</view>

@@ -1,0 +1,53 @@
+
+<!--微信地图接口-->
+
+<view class="contentLi">
+  <view class="mapBtn" bindtap="getLocation">getLocation</view>
+  <text>(获取当前位置)</text>
+  <view class="mapBtn" bindtap="clickMap">openLocation</view>
+  <text>(定位初始位置，名称坐标地址等，实现一个自定义的位置展示)</text>
+  <view class="mapBtn" bindtap="clickMapA">chooseLocation</view>
+  <text>(用于选择购物选择送货地址。返回的是选中的地址)</text>
+  <view class="mapBtn" bindtap="getCenterLocation">getCenterLocation</view>
+  <text>(获取当前地图中心经纬度)</text>
+  <view class="mapBtn" bindtap="moveToLocation">moveToLocation</view>
+</view>
+<view class="conentDiv">
+   <map id="myMap" show-location class="myMap" markers="{{markers}}" include-points="{{includePoints}}" polyline="{{polyline}}"  scale="14" />
+  <!-- 
+   bindcontroltap="controltap" 
+   bindmarkertap="markertap"  
+   bindregionchange="regionchange"
+   -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

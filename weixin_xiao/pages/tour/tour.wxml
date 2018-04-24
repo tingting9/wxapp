@@ -1,0 +1,57 @@
+<!--pages/tour/tour.wxml-->
+<view class="contentBox" >
+    <view class="tourT">
+        <view class="tourText"> 
+            <view class="tourTN">{{spacePlace.one[0]}}</view>
+            <view class="tourTe">{{spacePlace.one[1]}}</view>
+        </view>
+        <view class="tourText">
+            <view class="tourTN">{{spacePlace.two[0]}}</view>
+            <view class="tourTe">{{spacePlace.two[1]}}</view>
+        </view>
+        <view class="tourText">
+            <view class="tourTN">{{spacePlace.three[0]}}</view>
+            <view class="tourTe">{{spacePlace.three[1]}}</view>
+        </view>
+    </view>
+    <view class="tourBox">
+        <view class="tourIcon"></view>
+        <image src="{{bigIcon}}" background-size="cover" class="bigIcon"></image>
+        <image src="{{smallIcon}}" background-size="cover" class="smallIcon" bindtap="changeTopImage"></image>
+        <view class="tourIcomBottom">
+            <view class="tourBottomL"></view>
+            <view class="tourBottomM"></view>
+            <view class="tourBottomR"></view>
+        </view>
+    </view>
+    <view class="tourCont" id="tourCont">
+        <view wx:for="{{imgAll}}" class="tourcc" wx:for-items="{{imgAll}}" wx:for-index="idC" >
+            <view class="tourH">{{item.year}}</view>
+            <view class="tourC" wx:for="{{item.allInfor}}" bindtap="showModal" data-row="{{idC}}" data-block="{{idx}}" wx:for-index="idx" >
+                <view class="tourImg">
+                    <image src="{{item.img}}" ></image>
+                </view>
+                <view class="tourTot">{{item.tit}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="boxTip" animation="{{animationData}}" >
+    <view class="boxBg" bindtap="rotateYbox"></view>
+    <view class="boxTipClose" bindtap="rotateYbox">╳</view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box">  
+        <view class="boxBgC">
+            <block wx:for="{{imgAll[tipView[0]].allInfor[tipView[1]].allImg}}">  
+                <swiper-item  bindscroll="intervalChange" >  
+                <navigator >  
+                    <image src="{{item}}" class="slide-image" width="355" height="150"/>  
+                </navigator>   
+                </swiper-item>  
+            </block>  
+        </view>
+    </swiper>  
+
+</view>
+
+
+

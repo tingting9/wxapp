@@ -1,0 +1,131 @@
+/* pages/gdMap/gdMap.wxss */
+.flex-style{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-item{
+  height: 35px; 
+  line-height: 35px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1
+}
+.flex-item.active{
+  color:#0091ff;
+}
+.map_box{
+  position:absolute;
+  top: 35px;
+  bottom: 90px;
+  left: 0px;
+  right: 0px;
+}
+#navi_map{
+  width: 100%;
+  height: 100%;
+}
+.text_box{
+  position:absolute;
+  height: 65px;
+  bottom: 25px;
+  left: 0px;
+  right: 0px;
+  display:-webkit-flex;
+  display:-webki-box;
+  display:flex;
+  padding:0 5px;
+}
+.TaxiCost{
+   position:absolute;
+  height: 22px;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+}
+.TaxiCost view{
+  margin:0 5px;
+  background:#ecf5fc;
+  border:1px solid #c7d4eb;
+  text-align: center;
+  color:#666c74;
+  font-size: 13px;
+}
+.TaxiCost view text{
+  color:#6890c6;
+}
+
+.text_box .text{
+  margin: 15px;
+
+}
+.detail_button{
+  position:absolute;
+  bottom: 30px;
+  right: 10px;
+  padding: 3px 5px;
+  color: #fff;
+  background: #0091ff;
+  width:50px;
+  text-align:center;
+  border-radius:10px;
+}
+
+.defaultBtn{
+  -webkit-box-flex:1;
+  -weikit-flex:1;
+  flex:1;
+  text-align: center;
+  border-right:1px solid #eee;
+  color:#979797;
+  font-size: 12px; 
+  padding:10rpx 0;
+  box-sizing:border-box;
+  line-height:19px;
+  border-radius: 5px;
+}
+.defaultBtn.acitve{
+   background:#3085fc;
+   border:1px solic #2371ed;
+   color:#fff;
+}
+.defaultBtn.acitve .BtnTime{
+   color:#fff;
+}
+
+.defaultBtn .BtnTime{
+  font-size: 20px;
+   color:#646464; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

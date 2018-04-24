@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container contIndex">
+  <!--bindtap="bindViewTap"-->
+  <view   class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="payBox">
+    <text bindtap="getTrainInfo">客服</text>
+    <contact-button/> 
+  </view>
+  <view class="payBox">
+    <text bindtap="getNumber">电话</text>
+  </view>
+   <view class="payBox">
+    <text bindtap="getCode">扫码</text>
+  </view>
+  <view class="payBox">
+    <text>{{contentT.result}}</text>
+    <text>{{contentT.result}}</text>
+  </view>
+</view>
+
+
